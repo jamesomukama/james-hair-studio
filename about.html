@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - James Hair Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #about-page {
+            padding: 100px 0;
+            background: #f9f9f9;
+        }
+
+        .about-container {
+            width: 85%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-container h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .about-container p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .about-box {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-card {
+            flex-basis: 30%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .about-card i {
+            font-size: 30px;
+            color: #009688;
+            margin-bottom: 10px;
+        }
+
+        .about-card h3 {
+            margin-bottom: 10px;
+        }
+
+        @media(max-width: 768px){
+            .about-card{
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION (same as homepage) -->
+<div id="sideNav">
+<nav>
+<ul>
+<li><a href="index.html#banner">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="findout.html">FIND OUT</a></li>
+<li><a href="careers.html">CAREERS</a></li>
+<li><a href="booking.html">BOOKING</a></li>
+<li><a href="feedback.html">FEEDBACK</a></li>
+<li><a href="index.html#footer">CONTACT</a></li>
+</ul>
+</nav>
+</div>
+
+<div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about-page">
+    <div class="about-container">
+
+        <h1>About James Hair Studio</h1>
+
+        <p>
+            At James Hair Studio, we are passionate about delivering modern grooming
+            services that bring out confidence and style in every client. Located in Kampala,
+            we have built a reputation for quality, professionalism, and consistency.
+        </p>
+
+        <p>
+            Our team of experienced barbers specializes in a wide range of services including
+            clean haircuts, stylish fades, beard grooming, and advanced hair treatments.
+            Every service is tailored to meet your personal style and expectations.
+        </p>
+
+        <!-- CARDS -->
+        <div class="about-box">
+
+            <div class="about-card">
+                <i class="fa fa-users"></i>
+                <h3>Our Team</h3>
+                <p>Highly skilled professionals dedicated to giving you the best grooming experience.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa fa-scissors"></i>
+                <h3>Our Services</h3>
+                <p>From classic cuts to modern styles, we deliver precision and quality every time.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa fa-star"></i>
+                <h3>Our Mission</h3>
+                <p>To provide top-tier grooming services that leave every client confident and satisfied.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<section id="footer">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <h1>Visit Shop Today</h1>
+    </div>
+
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock-o"></i> Monday to Friday - 9am to 9pm</p>
+            <p><i class="fa fa-clock-o"></i> Saturday & Sunday - 8am to 11pm</p>
+        </div>
+
+        <div class="footer-right">
+            <h1>Get In Touch</h1>
+            <p>Kampala, Uganda <i class="fa fa-map-marker"></i></p>
+            <p>jamesomukama@gmail.com <i class="fa fa-paper-plane"></i></p>
+            <p>+256 773744027 <i class="fa fa-phone"></i></p>
+        </div>
+    </div>
+</section>
+
+<!-- SCRIPT (same as homepage) -->
+<script>
+var menuBtn = document.getElementById("menuBtn") 
+var sideNav = document.getElementById("sideNav") 
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function () {
+    if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0"
+        menu.src = "images/close.png"
+    } else {
+        sideNav.style.right = "-250px"
+        menu.src = "images/menu.png"
+    }
+}
+</script>
+
+<a href="https://wa.me/256773744027" class="whatsapp-float" target="_blank">
+<i class="fa fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
